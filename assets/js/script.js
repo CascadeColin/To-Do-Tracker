@@ -2,8 +2,15 @@ var todoInput = document.querySelector("#todo-text");
 var todoForm = document.querySelector("#todo-form");
 var todoList = document.querySelector("#todo-list");
 var todoCountSpan = document.querySelector("#todo-count");
+
 var todaysDate = new Date();
-document.getElementById("datetime").innerHTML = todaysDate.toLocaleDateString();
+document.getElementById("todaydate").innerHTML = todaysDate.toLocaleDateString();
+//set the next 2 to display tomorrow and the day after that
+var tomorrowDate = new Date();
+document.getElementById("tomorrowdate").innerHTML = tomorrowDate.toLocaleDateString();
+var thirdDate = new Date();
+document.getElementById("thirddate").innerHTML = thirdDate.toLocaleDateString();
+
 
 var todos = [];
 

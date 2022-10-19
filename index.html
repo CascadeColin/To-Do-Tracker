@@ -8,16 +8,36 @@
     <title>Todo List</title>
   </head>
   <body>
+    <!-- card for current day -->
     <div class="card">
-      <h1>Todo Tracker for <span id="datetime"></span></h1>
+      <h1>Todo Tracker for <span id="todaydate"></span></h1>
       <form id="todo-form" method="POST">
         <label for="todo-text">Add a Todo: </label>
         <input type="text" placeholder="I need to..." name="todo-text" id="todo-text" />
       </form>
       <p>Todo Count: <span id="todo-count">0</span></p>
       <ul id="todo-list"></ul>
-  
-  </div>
+    </div>
+    <!-- card for next day -->
+    <div class="card">
+      <h1>Todo Tracker for <span id="tomorrowdate"></span></h1>
+      <form id="todo-form" method="POST">
+        <label for="todo-text">Add a Todo: </label>
+        <input type="text" placeholder="I need to..." name="todo-text" id="todo-text" />
+      </form>
+      <p>Todo Count: <span id="todo-count">0</span></p>
+      <ul id="todo-list"></ul>
+    </div>
+    <!-- card for 3rd day -->
+    <div class="card">
+      <h1>Todo Tracker for <span id="thirddate"></span></h1>
+      <form id="todo-form" method="POST">
+        <label for="todo-text">Add a Todo: </label>
+        <input type="text" placeholder="I need to..." name="todo-text" id="todo-text" />
+      </form>
+      <p>Todo Count: <span id="todo-count">0</span></p>
+      <ul id="todo-list"></ul>
+    </div>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
