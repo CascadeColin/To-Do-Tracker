@@ -2,6 +2,8 @@ var todoInput = document.querySelector("#todo-text");
 var todoForm = document.querySelector("#todo-form");
 var todoList = document.querySelector("#todo-list");
 var todoCountSpan = document.querySelector("#todo-count");
+var todaysDate = new Date();
+document.getElementById("datetime").innerHTML = todaysDate.toLocaleDateString();
 
 var todos = [];
 
